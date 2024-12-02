@@ -307,7 +307,7 @@ button:hover
 {
     max-width: 1300px;
     background:#fff;
-    height: 27rem;
+    height: 30rem;
     flex:1 1 20rem;
     padding:1.2rem;
     margin:1.5rem;
@@ -329,7 +329,7 @@ button:hover
 .cake-product .inner-cake-col .cake-price p
 {
   position:absolute;     
-  width: 2.7rem;
+  width: 10.7rem;
   height: auto;
   margin-top:-1.2rem;
   margin-left: 8rem;
