@@ -1,62 +1,51 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Đăng Nhập</title>
-    <link rel="stylesheet" href="./style.css"> -->
-    <!-- Link Font Awesome -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <section>
-        <div class="img-bg">
-            <img src="./th.jpg" alt="">
-        </div>
+    <title>Sign In/Up Form</title>
 
-        <div class="content">
-            <div class="form">
-                <h2>Trang Đăng Nhập</h2>
-                <form action="">
-                    <div class="input-form">
-                        <span>Tên Người Dùng</span>
-                        <input type="text" name="">
-                    </div>
-                    <div class="input-form">
-                        <span>Mật Khẩu</span>
-                        <input type="text" name="">
-                    </div>
-                    <div class="remember">
-                        <label for="">
-                            <input type="checkbox" name="">
-                            Nhớ Đăng Nhập
-                        </label>
-                    </div>
-                    <div class="input-form">
-                        <input type="submit" value="Đăng Nhập"> 
-                    </div>
-                    <div class="input-form">
-                        <p>Bạn có tài khoản chưa?
-                            <a href="#">Đăng ký</a></p>
-                    </div>
-                </form>
-                <h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
-                <ul class="icon">
-                    <li><i class="fa fa-facebook" 
-                        aria-hidden="true"></i></li>
-                    <li><i class="fa fa-google" 
-                        aria-hidden="true"></i></li>
-                    <li><i class="fa fa-twitter" 
-                            aria-hidden="true"></i></li>
-                </ul>
-            </div>
+    <!-- Liên kết tới tệp CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<h2>Sign in/up Form</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
         </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+<<<<<<< HEAD
     </section>
 </body>
-</html> -->
+</html> 
 <section class="user">
   <div class="user_options-container">
     <div class="user_options-text">
@@ -113,3 +102,23 @@
     </div>
   </div>
 </section>
+=======
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <head>
+      <script src="script.js" defer></script>
+  </head>
+>>>>>>> 590f23de268ec855fe77f4605a7b4b6cad3525dd
