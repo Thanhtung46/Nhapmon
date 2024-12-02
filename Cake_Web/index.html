@@ -199,7 +199,29 @@
 <!------------------------khiếu nại--------------->
 <section id="khieunai" class="khieunai">
     <h1 class="title"><span>Khiếu nại</span></h1>
-  
+<div class="complaint-container">
+    <!-- <h2 class="complaint-title">Gửi Khiếu Nại</h2> -->
+    <form class="complaint-form" id="complaintForm">
+        <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="complaint">Nội dung khiếu nại:</label>
+            <textarea id="complaint" name="complaint" placeholder="Nhập nội dung khiếu nại" rows="5"
+                required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Gửi Khiếu Nại</button>
+    </form>
+    <div id="complaint-message"></div>
+</div>
 </section>
 
 
