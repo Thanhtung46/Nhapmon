@@ -468,8 +468,8 @@ button:hover
         font-size:.6rem;
     }
 }
-/*---------------------contact us---------*/
-.contact
+/* ---------------------contact us--------- */
+/* .contact
 {
     padding-top:8.5rem;
 }
@@ -562,4 +562,42 @@ button:hover
     letter-spacing: .1rem;
     font-size: 1.5rem;
     color:#fff;
+} */
+
+Tổng thể trang
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.cake-contact-col {
+    margin: 20px;
+}
+
+input, select, button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c13e23;
 }
