@@ -1,137 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Đăng Nhập</title>
-    <link rel="stylesheet" href="./style.css"> 
-    Link Font Awesome
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign In/Up Form</title>
+
+    <!-- Liên kết tới tệp CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <section>
-        <div class="img-bg">
-            <img src="./th.jpg" alt="">
+<h2>Sign in/up Form</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
+            </form>
         </div>
-    <link rel="stylesheet" href="style.scss">
-<section class="user">
-  <div class="user_options-container">
-    <div class="user_options-text">
-      <div class="user_options-unregistered">
-        <h2 class="user_unregistered-title">Don't have an account?</h2>
-        <p class="user_unregistered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
-        <button class="user_unregistered-signup" id="signup-button">Sign up</button>
-      </div>
-
-      <div class="user_options-registered">
-        <h2 class="user_registered-title">Have an account?</h2>
-        <p class="user_registered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
-        <button class="user_registered-login" id="login-button">Login</button>
-      </div>
-    </div>
-    <div class="user-options-forms" id="user-options-forms">
-      <div class="user_forms-login">
-        <h2 class="forms_title">Login</h2>
-        <form class="forms_form">
-          <fieldset class="forms_fieldset">
-            <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
-            </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
         </div>
-    </section>
-</body>
-</html>
-<section class="user">
-    <div class="user_options-container">
-        <div class="user_options-text">
-            <div class="user_options-unregistered">
-                <h2 class="user_unregistered-title">Don't have an account?</h2>
-                <p class="user_unregistered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer
-                    whatever street art fap.</p>
-                <button class="user_unregistered-signup" id="signup-button">Sign up</button>
-            </div>
-
-            <div class="user_options-registered">
-                <h2 class="user_registered-title">Have an account?</h2>
-                <p class="user_registered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer
-                    whatever street art fap.</p>
-                <button class="user_registered-login" id="login-button">Login</button>
-            </div>
-        </div>
-
-        <div class="user_options-forms" id="user_options-forms">
-            <div class="user_forms-login">
-                <h2 class="forms_title">Login</h2>
-                <form class="forms_form">
-                    <fieldset class="forms_fieldset">
-                        <div class="forms_field">
-                            <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
-                        </div>
-                        <div class="forms_field">
-                            <input type="password" placeholder="Password" class="forms_field-input" required />
-                        </div>
-                    </fieldset>
-                    <div class="forms_buttons">
-                        <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-                        <input type="submit" value="Log In" class="forms_buttons-action">
-                    </div>
-                </form>
-            </div>
-            <div class="user_forms-signup">
-                <h2 class="forms_title">Sign Up</h2>
-                <form class="forms_form">
-                    <fieldset class="forms_fieldset">
-                        <div class="forms_field">
-                            <input type="text" placeholder="Full Name" class="forms_field-input" required />
-                        </div>
-                        <div class="forms_field">
-                            <input type="email" placeholder="Email" class="forms_field-input" required />
-                        </div>
-                        <div class="forms_field">
-                            <input type="password" placeholder="Password" class="forms_field-input" required />
-                        </div>
-                    </fieldset>
-                    <div class="forms_buttons">
-                        <input type="submit" value="Sign up" class="forms_buttons-action">
-                    </div>
-                </form>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
             </div>
         </div>
     </div>
-            <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
-            </div>
-          </fieldset>
-          <div class="forms_buttons">
-            <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-            <input type="submit" value="Log In" class="forms_buttons-action">
-          </div>
-        </form>
-      </div>
-      <div class="user_forms-signup">
-        <h2 class="forms_title">Sign Up</h2>
-        <form class="forms_form">
-          <fieldset class="forms_fieldset">
-            <div class="forms_field">
-              <input type="text" placeholder="Full Name" class="forms_field-input" required />
-            </div>
-            <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required />
-            </div>
-            <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
-            </div>
-          </fieldset>
-          <div class="forms_buttons">
-            <input type="submit" value="Sign up" class="forms_buttons-action">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-</section>
+    <head>
+      <script src="script.js" defer></script>
+  </head>

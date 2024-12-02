@@ -1,22 +1,13 @@
-/**
- * Variables
- */
-const signupButton = document.getElementById('signup-button'),
-    loginButton = document.getElementById('login-button'),
-    userForms = document.getElementById('user_options-forms')
+<script>
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-/**
- * Add event listener to the "Sign Up" button
- */
-signupButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceRight')
-  userForms.classList.add('bounceLeft')
-}, false)
+signUpButton.addEventListener('click', () = {
+    container.classList.add('right-panel-active')
+});
 
-/**
- * Add event listener to the "Login" button
- */
-loginButton.addEventListener('click', () => {
-  userForms.classList.remove('bounceLeft')
-  userForms.classList.add('bounceRight')
-}, false)
+signInButton.addEventListener('click', () = {
+    container.classList.remove('right-panel-active')
+});
+</script>
