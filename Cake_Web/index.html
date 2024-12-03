@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-    <html lang="vi">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
     <title>Đấu Giá</title>
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css"> <!-- Liên kết file CSS -->
-
-
 </head>
 
 <body>
     <!--------------------------------------header---------------->
     <header>
-        <a href="#home" class="logo"><img src="blob.jpg"></a>
+        <a href="#home" class="logo"><img src="blob.jpg" alt="Logo"></a>
 
         <nav class="navigate">
             <ul>
@@ -33,10 +25,31 @@
                 <li><a href="#contact">Hướng dẫn thanh toán</a></li>
                 <li><a href="#khieunai">Khiếu nại</a></li>
                 <li><a href="#daugia">Đấu giá</a></li>
+                <li><a href="#" id="login-link">Đăng Nhập</a></li> <!-- Liên kết đăng nhập -->
             </ul>
         </nav>
         <div id="menu"><i class="fas fa-bars"></i></div>
     </header>
+    <div id="login-container">
+        <!-- Form đăng nhập sẽ được nhúng vào đây -->
+    </div>
+
+    <script>
+        document.getElementById('login-link').addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Tạo iframe chứa trang đăng nhập
+            const iframe = document.createElement('iframe');
+            iframe.src = 'Login/index1.html';  // Đảm bảo đường dẫn đúng
+            iframe.width = '100%';
+            iframe.height = '900px';  // Tùy chỉnh chiều cao của iframe
+            iframe.style.border = 'none';  // Loại bỏ viền
+            
+            // Thêm iframe vào phần #login-container
+            document.getElementById('login-container').innerHTML = '';  // Xóa nội dung cũ
+            document.getElementById('login-container').appendChild(iframe);
+        });
+    </script>
     <!-------------------------Home------------------->
     <section id="home" class="home">
         <h1>Mặt hàng đấu giá nhiều nhất</h1>
