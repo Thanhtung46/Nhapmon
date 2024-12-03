@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentBidElem.textContent = `${newBid.toLocaleString()} VNĐ`;
         alert('Đấu giá thành công!');
       } else {
-        alert('Giá đấu phải lớn hơn giá hiện tại!');
+        alert('Đấu giá không thành công \n Giá đấu phải lớn hơn giá hiện tại!');
       }
 
       bidInput.value = ''; // Xóa giá trị sau khi đấu giá
