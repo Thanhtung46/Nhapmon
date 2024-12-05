@@ -57,19 +57,19 @@ header .navigate ul li
 header .navigate ul li a 
 {
     font-size: 1.2rem;
-    color:rgb(0, 0, 0);
+    color:rgb(9, 8, 8);
     text-decoration:none;
     font-weight: 500;
 }
 header .navigate ul li a.active,
 header .navigate ul li a:hover 
 {
-    color:rgb(215, 2, 73);
+    color:rgb(202, 6, 81);
 }
 header #menu 
 {
     font-size: 2rem;
-    color:rgb(236, 35, 119);
+    color:rgb(113, 10, 10);
     cursor: pointer;
     display: none;
 }
@@ -200,14 +200,14 @@ button:hover
         font-size:1.2rem;
     }   
 }
-/*-----------------------about us-----------*/
+/* -----------------------Phuong thuc tt ----------- */
 .about
 {
     display: flex;
     justify-content: space-between;
     align-items:center;
 }
-.about .about-content
+/* .about .about-content
 {
     width:100%;
     height: auto;
@@ -216,7 +216,7 @@ button:hover
     text-align: center;
     background:limegreen;
     border-radius: 5px;
-}
+} */
 .about-content h2 
 {
     font-size:2.5rem;

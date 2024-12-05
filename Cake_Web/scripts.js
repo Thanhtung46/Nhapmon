@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // JavaScript: Xử lý form khiếu nại
 document.getElementById('complaintForm').addEventListener('submit', function (e) {
   e.preventDefault();
-
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const complaint = document.getElementById('complaint').value;
@@ -61,4 +60,17 @@ document.getElementById('complaintForm').addEventListener('submit', function (e)
       document.getElementById('complaint-message').textContent =
         'Đã xảy ra lỗi, vui lòng thử lại!';
     });
+});
+// }// Kiểm tra trạng thái đăng nhập
+if (localStorage.getItem("isLoggedIn") !== "true") {
+  // Chưa đăng nhập, quay về trang login
+  window.location.href = "Login/index1.html";
+}
+
+// Xử lý khi người dùng nhấn "Đăng xuất"
+const logoutButton = document.getElementById('logoutButton');
+logoutButton.addEventListener('click', () => {
+  // Xóa trạng thái đăng nhập và chuyển về trang login
+  localStorage.removeItem("isLoggedIn");
+  window.location.href = "Login/index1.html";
 });
