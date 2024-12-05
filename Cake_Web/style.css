@@ -57,14 +57,14 @@ header .navigate ul li
 header .navigate ul li a 
 {
     font-size: 1.2rem;
-    color:limegreen;
+    color:rgb(0, 0, 0);
     text-decoration:none;
     font-weight: 500;
 }
 header .navigate ul li a.active,
 header .navigate ul li a:hover 
 {
-    color:rgb(236, 35, 119);
+    color:rgb(215, 2, 73);
 }
 header #menu 
 {
