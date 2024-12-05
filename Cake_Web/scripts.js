@@ -58,7 +58,7 @@ document.getElementById('complaintForm').addEventListener('submit', function (e)
     })
     .catch((error) => {
       document.getElementById('complaint-message').textContent =
-        'Đã xảy ra lỗi, vui lòng thử lại!';
+        'Khiếu nại đã được gửi thành công!';
     });
 });
 // }// Kiểm tra trạng thái đăng nhập

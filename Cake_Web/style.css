@@ -18,7 +18,7 @@ html::-webkit-scrollbar
 }
 html::-webkit-scrollbar-thumb
 {
-    background: rgb(236, 35, 119);
+    background: rgb(0, 0, 0);
 }
 section
 {
@@ -64,7 +64,7 @@ header .navigate ul li a
 header .navigate ul li a.active,
 header .navigate ul li a:hover 
 {
-    color:rgb(202, 6, 81);
+    color:rgb(0, 0, 0);
 }
 header #menu 
 {
@@ -162,7 +162,7 @@ header #menu
     text-align: center;
     letter-spacing: 1px;
     color:#fff;
-    background:rgb(236, 35, 119); 
+    background:rgb(0, 0, 0); 
 }
 button i 
 {
@@ -223,7 +223,7 @@ button:hover
     color:#fff;
     padding:.5rem 0;
     letter-spacing:.2rem;
-    text-shadow: .2rem .2rem #fa4975;
+    text-shadow: .2rem .2rem #000000;
 }
 .about-content p 
 {
@@ -249,7 +249,7 @@ button:hover
     padding:.6rem;
     border-radius: 5px;
     border: none;
-    background:rgb(236, 35, 119);
+    background:rgb(0, 0, 0);
     color:#fff;
     font-size: 1rem;
     font-weight:600;
@@ -290,11 +290,11 @@ button:hover
     text-align:center;
     font-size:3rem;
     padding:0.5rem;
-    color:rgb(236, 35, 119);
+    color:rgb(0, 0, 0);
 }
 .title span
 {
-    color:limegreen;
+    color:rgb(0, 0, 0);
 }
 .cake-product .inner-cake-row
 {
@@ -312,7 +312,7 @@ button:hover
     padding:1.2rem;
     margin:1.5rem;
     border-radius:1rem;
-    box-shadow:0 .3rem .6rem rgb(236, 35, 119);
+    box-shadow:0 .3rem .6rem rgb(93, 91, 92);
     text-align: center;
 }
 .cake-product .inner-cake-col:hover 

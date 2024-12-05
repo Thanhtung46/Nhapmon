@@ -35,7 +35,7 @@
         <h1>Mặt hàng đấu giá nhiều nhất</h1>
         <!-- <p>Lorem ipsum dolor sit amet,<br> at mei dolore tritani repudiandae.</p> -->
         <div class="home-btn">
-            <button>Book Now<i class="fas fa-angle-right"></i></button>
+            <button id="bookNowButton">Book Now<i class="fas fa-angle-right"></i></button>
         </div>
     </section>
 
@@ -102,6 +102,12 @@
                     </div>
                     <h2>Bộ đĩa mâm cơm cúng xanh đồng hoa sen</h2>
                 </div>
+                <!-- chinh nut -->
+                <script>
+                    document.getElementById('bookNowButton').addEventListener('click', () => {
+                        document.getElementById('product').scrollIntoView({ behavior: 'smooth' });
+                    });
+                </script>
     </section>
 <!------------------------khiếu nại--------------->
 <section id="khieunai" class="khieunai">
@@ -158,7 +164,7 @@
     </div>
 
     <div class="product-card">
-        <img src="bat.png" alt="Product Image" class="product-image">
+        <img src="bat4.png" alt="Product Image" class="product-image">
         <h2 class="product-title">Bát thuyền đựng gà vẽ sen hồng</h2>
         <p class="product-description">Mô tả ngắn về sản phẩm 2.</p>
         <p class="current-bid">Giá hiện tại: <span class="bid-amount">420,000 VNĐ</span></p>
@@ -167,7 +173,7 @@
     </div>
 
     <div class="product-card">
-        <img src="bodia.png" alt="Product Image" class="product-image">
+        <img src="bodia1.png" alt="Product Image" class="product-image">
         <h2 class="product-title">Bộ đĩa mâm cơm cúng xanh đồng hoa sen</h2>
         <p class="current-bid">Giá hiện tại: <span class="bid-amount">1,250,000 VNĐ</span></p>
         <input type="number" class="bid-input" placeholder="Nhập giá đấu (VNĐ)">
