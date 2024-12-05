@@ -49,7 +49,7 @@ loginForm.addEventListener('submit', (event) => {
 
     if (username === storedEmail && password === storedPassword) {
         alert('Đăng nhập thành công!');
-        localStorage.setItem("isLoggedIn", "true");
+        // localStorage.setItem("isLoggedIn", "true");
         window.location.href = '../index.html'; // Chuyển đến trang chính
     } else {
         errorElement.textContent = "Email hoặc mật khẩu không chính xác!";
