@@ -61,16 +61,3 @@ document.getElementById('complaintForm').addEventListener('submit', function (e)
         'Khiếu nại đã được gửi thành công!';
     });
 });
-// }// Kiểm tra trạng thái đăng nhập
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  // Chưa đăng nhập, quay về trang login
-  window.location.href = "Login/index1.html";
-}
-
-// Xử lý khi người dùng nhấn "Đăng xuất"
-const logoutButton = document.getElementById('logoutButton');
-logoutButton.addEventListener('click', () => {
-  // Xóa trạng thái đăng nhập và chuyển về trang login
-  localStorage.removeItem("isLoggedIn");
-  window.location.href = "Login/index1.html";
-});
